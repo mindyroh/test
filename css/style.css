@@ -1,0 +1,56 @@
+body {
+	/*background-image: url('../img/bill.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;*/
+	background: url('../img/bill.jpg') no-repeat center fixed #000;
+
+	/* background-size does not work as part of "background" shortcut */
+	background-size: cover;
+
+	/*font-family: Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 14px;*/
+	font: bold italic 14px Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Multiple selectors can be combined together */
+h1, h2, h3, h4, h5, h6, .halloween {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Select by element type */
+p {
+	color: #6FC279;
+	background-color: black;
+	padding: 30px;
+}
+
+/* Qualify our classes with types ".test must be a <p>" */
+p.test {
+	color: brown;
+	background-color: lightblue;
+}
+
+/* .halloween element exists WITHIN a section */ 
+section .halloween {
+	color: black;
+	background-color: orange;
+}
+
+/* ID selector, avoid for styling only */
+#para {
+	color: blue;
+	background-color: green;
+}
+
+/* Regular old class */
+.intro {
+	text-align: right;
+	word-spacing: 10px;
+	letter-spacing: 5px;
+}
+
+
+
